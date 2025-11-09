@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Jasa Joki Game Pro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;400&family=Orbitron:wght@900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Gaya dasar untuk poster */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a2e;
+            /* Latar belakang gelap, futuristik */
+            margin: 0;
+            font-family: 'Chakra Petch', sans-serif;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .poster-container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #0f3460;
+            /* Warna dasar poster */
+            border: 5px solid #e94560;
+            /* Border mencolok */
+            box-shadow: 0 0 30px rgba(233, 69, 96, 0.8);
+            /* Efek glow merah */
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            animation: pulse-border 2s infinite alternate;
+            /* Animasi berkedip pada border */
+        }
+
+        /* Animasi berkedip pada border */
+        @keyframes pulse-border {
+            from {
+                border-color: #e94560;
+                box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+            }
+
+            to {
+                border-color: #ffb846;
+                /* Berubah warna ke emas */
+                box-shadow: 0 0 35px rgba(255, 184, 70, 0.9);
+            }
+        }
+
+        /* Gaya untuk Judul Utama */
+        .poster-title {
+            font-family: 'Orbitron', sans-serif;
+            /* Font tegas dan tebal */
+            font-size: 2.5em;
+            color: #ffb846;
+            /* Warna emas */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 184, 70, 0.5);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* Gaya untuk Subjudul/Slogan */
+        .poster-subtitle {
+            font-size: 1.2em;
+            color: #b8c1ec;
+            margin-bottom: 25px;
+            border-bottom: 2px dashed #b8c1ec;
+            padding-bottom: 10px;
+        }
+
+        /* Gaya untuk Fitur Utama (List) */
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .features-list li {
+            background-color: #1c274c;
+            /* Latar belakang item fitur */
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .features-list li:hover {
+            transform: scale(1.03);
+            /* Efek saat disentuh/hover */
+            background-color: #2a3861;
+        }
+
+        .features-list li::before {
+            content: '🔥';
+            /* Ikon api untuk setiap poin */
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* Gaya untuk CTA Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #e94560;
+            /* Warna merah mencolok */
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(233, 69, 96, 0.5);
+            transition: background-color 0.3s, transform 0.3s;
+            animation: blink-shadow 1.5s infinite;
+            /* Animasi bayangan berkedip */
+        }
+
+        .cta-button:hover {
+            background-color: #ff6a80;
+            transform: translateY(-3px);
+        }
+
+        /* Animasi bayangan berkedip */
+        @keyframes blink-shadow {
+            0% {
+                box-shadow: 0 5px 15px rgba(233, 69, 96, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 5px 25px rgba(255, 184, 70, 0.8);
+            }
+
+            100% {
+                box-shadow: 0 5px 15px rgba(233, 69, 96, 0.5);
+            }
+        }
+
+        /* Gaya untuk Kontak/Disclaimer */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #8d93ab;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="poster-container">
+        <h1 class="poster-title">JOKI <span style="color: #e94560;">Aman Murah</span> Dan Terpercaya</h1>
+        <p class="poster-subtitle">Capai Rank Tertinggi Tanpa Ribet!</p>
+
+        <ul class="features-list">
+            <li>Rank di jamin naik sesuai pesanan</li>
+            <li>Dijamin tepat waktu</li>
+            <li>100% Aman dan Rahasia</li>
+            <li>Harga Paling Terjangkau!</li>
+        </ul>
+
+        <a href="https://wa.me/message/FPKZ66FWJQ2XK1" class="cta-button" target="_blank">
+            ORDER SEKARANG!
+        </a>
+
+        <div class="contact-info">
+            <p>Hubungi Kami: 📞 +62 878-4459-8736 (WhatsApp)</p>
+            <p>*Hanya untuk game yang diizinkan.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
